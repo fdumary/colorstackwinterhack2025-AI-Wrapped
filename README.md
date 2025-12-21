@@ -1,4 +1,4 @@
-# colorstackwinterhack2025--projectname-
+# AI Wrapped
 Project logo here
 
 ColorStack Winter Break Hackathon Edition 2025
