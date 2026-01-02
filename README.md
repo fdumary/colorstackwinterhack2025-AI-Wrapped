@@ -12,6 +12,20 @@ Here
 ## Technologies
 Here
 ## Setup & Installation Instructions
+Clone repository or download ZIP
+
+Open Chrome
+
+Go to "Extensions"
+
+Enable developer mode
+
+Click on "Load unpacked
+
+Select "AI Wrapped folder"
+
+Load extension
+
 ### Extension Setup
 #### On the wrappedAI branch
 + switch to the branch and install and build npm 
