@@ -1,6 +1,6 @@
 {
     "$schema": "https://www.schemastore.org/chrome-manifest.json",
-    "name": "Wrapped AI",
+    "name": "AI Wrapped",
     "description": "tracks conversations with generative ai",
     "version": "0.1", 
     "manifest_version": 3,
