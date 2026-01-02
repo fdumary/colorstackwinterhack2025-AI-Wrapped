@@ -1,5 +1,4 @@
-# AI Wrapped
-Project logo here
+<img width="337.33" height="64.67" alt="image" src="https://github.com/user-attachments/assets/4d7fa4cb-0b6d-4790-93a3-d19951cdf1a9" />
 
 ColorStack Winter Break Hackathon Edition 2025
 ## Description
@@ -13,13 +12,12 @@ Here
 ## Technologies
 Here
 ## Setup & Installation Instructions
-## Extension Setup
-### On the wrappedAI branch
+### Extension Setup
+#### On the wrappedAI branch
 + switch to the branch and install and build npm 
   + `npm install`
   + `npm run build`
----
-## Testing the extension on chrome 
+### Testing the extension on chrome 
 + Load the extension from `/wrappedAI`
 ## Team Members & Contributions
 Here
