@@ -84,7 +84,9 @@ function Wrapped() {
             <h2>Weekly Usage</h2>
             <p>Most AI usage happened on Sunday.</p>
             {/* placeholder for bar chart */}
-            <div className="chart-placeholder" />
+            <div className="chart-placeholder">
+                <div className="bar" />
+            </div>
             <button onClick={() => setView('text')}>
                 Go to Text Summary
             </button>
