@@ -7,13 +7,20 @@ Here
 ## How the Project Aligns With the Problem
 Here
 ## How the Project Solves the Problem
-Here
+Her
 ## Usage Instructions and Features
 Here
 ## Technologies
 Here
 ## Setup & Installation Instructions
-Here
+## Extension Setup
+### On the wrappedAI branch
++ switch to the branch and install and build npm 
+  + `npm install`
+  + `npm run build`
+---
+## Testing the extension on chrome 
++ Load the extension from `/wrappedAI`
 ## Team Members & Contributions
 Here
 ## Demo Video
