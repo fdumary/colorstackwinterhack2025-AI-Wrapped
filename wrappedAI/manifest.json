@@ -9,12 +9,13 @@
         "32": "icons/icon32.png",
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
+
     },
     "action": {"default_popup": "dist/index.html"},
-    "permissions": ["storage", "tabs", "activeTab"],
+    "permissions": ["storage", "tabs"],
     "background": {"service_worker": "scripts/background.js"},
     "content_scripts": [{
-        "matches": ["https://chat.openai.com/*","https://*.chatgpt.com/*",  "https://claude.ai/*", "https://*.claude.ai/*"],
+        "matches": ["https://*.chatgpt.com/*", "https://*.claude.ai/*", "https://*.gemini.google.com/*"],
         "js": ["scripts/content.js"]
     }]
 }
