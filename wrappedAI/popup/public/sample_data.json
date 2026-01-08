@@ -1,0 +1,384 @@
+[
+  {
+    "id": "chat_2024_12_31_143022",
+    "date_time": "2024-12-31T14:30:22Z",
+    "platform": "claude",
+    "duration": 1847,
+    "length": 3421,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "I'm getting a CORS error when my React app tries to fetch data from my Express backend. Both are running on localhost but different ports.",
+        "timestamp": "2024-12-31T14:30:22Z"
+      },
+      {
+        "role": "assistant",
+        "content": "This is a classic CORS issue. You need to enable CORS in your Express backend. Install the cors package...",
+        "timestamp": "2024-12-31T14:32:15Z"
+      },
+      {
+        "role": "user",
+        "content": "I added the cors middleware but it's still not working. Here's my server code...",
+        "timestamp": "2024-12-31T14:35:48Z"
+      },
+      {
+        "role": "assistant",
+        "content": "I see the issue - you're adding cors() after your routes. Move it before your route definitions...",
+        "timestamp": "2024-12-31T14:38:09Z"
+      }
+    ],
+    "sum_convo": "Resolved CORS error in React + Express app by properly configuring cors middleware placement in server setup",
+    "category": "coding"
+  },
+  {
+    "id": "chat_2024_12_30_092145",
+    "date_time": "2024-12-30T09:21:45Z",
+    "platform": "chatgpt",
+    "duration": 420,
+    "length": 1256,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "Can you explain how garbage collection works in Java?",
+        "timestamp": "2024-12-30T09:21:45Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Java's garbage collection automatically manages memory by identifying and removing objects that are no longer needed...",
+        "timestamp": "2024-12-30T09:22:33Z"
+      },
+      {
+        "role": "user",
+        "content": "What's the difference between minor and major GC?",
+        "timestamp": "2024-12-30T09:26:12Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Minor GC happens in the Young Generation and is fast, while Major GC (or Full GC) cleans the entire heap...",
+        "timestamp": "2024-12-30T09:28:45Z"
+      }
+    ],
+    "sum_convo": "Learned about Java garbage collection mechanisms including minor vs major GC and memory management",
+    "category": "learning"
+  },
+  {
+    "id": "chat_2024_12_29_183312",
+    "date_time": "2024-12-29T18:33:12Z",
+    "platform": "gemini",
+    "duration": 612,
+    "length": 2847,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "I need to write a professional email declining a job offer but keeping the door open for future opportunities.",
+        "timestamp": "2024-12-29T18:33:12Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Here's a polite and professional template: Subject: Re: Job Offer - [Position Title]...",
+        "timestamp": "2024-12-29T18:34:28Z"
+      },
+      {
+        "role": "user",
+        "content": "Can you make it sound warmer? I really liked the team.",
+        "timestamp": "2024-12-29T18:39:55Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Absolutely, here's a revised version with more personal warmth...",
+        "timestamp": "2024-12-29T18:43:32Z"
+      }
+    ],
+    "sum_convo": "Drafted professional email to decline job offer while maintaining positive relationship for future opportunities",
+    "category": "writing"
+  },
+  {
+    "id": "chat_2024_12_28_201547",
+    "date_time": "2024-12-28T20:15:47Z",
+    "platform": "claude",
+    "duration": 2234,
+    "length": 5632,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "Help me brainstorm ideas for a sci-fi short story about AI that becomes self-aware in a smart home.",
+        "timestamp": "2024-12-28T20:15:47Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Interesting premise! Here are some angles to explore...",
+        "timestamp": "2024-12-28T20:17:22Z"
+      },
+      {
+        "role": "user",
+        "content": "I love the idea about it learning from the family's daily routines. Can we explore that more?",
+        "timestamp": "2024-12-28T20:25:39Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Let's develop that. The AI could start noticing patterns that even the family doesn't realize...",
+        "timestamp": "2024-12-28T20:28:14Z"
+      }
+    ],
+    "sum_convo": "Brainstormed sci-fi short story concept about self-aware smart home AI learning from family patterns",
+    "category": "creative"
+  },
+  {
+    "id": "chat_2024_12_27_115623",
+    "date_time": "2024-12-27T11:56:23Z",
+    "platform": "chatgpt",
+    "duration": 892,
+    "length": 1987,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "What are some common behavioral questions asked in software engineering interviews?",
+        "timestamp": "2024-12-27T11:56:23Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Here are the most common ones: Tell me about a time you faced a difficult bug...",
+        "timestamp": "2024-12-27T11:57:45Z"
+      },
+      {
+        "role": "user",
+        "content": "Can you help me craft a STAR response for handling conflicting priorities?",
+        "timestamp": "2024-12-27T12:04:18Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure! Let's structure it: Situation - Describe when you had multiple urgent tasks...",
+        "timestamp": "2024-12-27T12:11:35Z"
+      }
+    ],
+    "sum_convo": "Prepared STAR method responses for common behavioral interview questions in software engineering",
+    "category": "career"
+  },
+  {
+    "id": "chat_2024_12_26_224401",
+    "date_time": "2024-12-26T22:44:01Z",
+    "platform": "gemini",
+    "duration": 145,
+    "length": 487,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "tell me a joke about programmers",
+        "timestamp": "2024-12-26T22:44:01Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Why do programmers prefer dark mode? Because light attracts bugs!",
+        "timestamp": "2024-12-26T22:44:38Z"
+      },
+      {
+        "role": "user",
+        "content": "lol got another one?",
+        "timestamp": "2024-12-26T22:45:52Z"
+      },
+      {
+        "role": "assistant",
+        "content": "A SQL query walks into a bar, walks up to two tables and asks... 'Can I JOIN you?'",
+        "timestamp": "2024-12-26T22:46:26Z"
+      }
+    ],
+    "sum_convo": "Shared programming jokes and puns",
+    "category": "fun"
+  },
+  {
+    "id": "chat_2024_12_25_134729",
+    "date_time": "2024-12-25T13:47:29Z",
+    "platform": "claude",
+    "duration": 1523,
+    "length": 4102,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "How would you design a URL shortener like bit.ly? I have an interview coming up.",
+        "timestamp": "2024-12-25T13:47:29Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Great system design question! Let's break this down: Requirements, API design, database schema, and scalability...",
+        "timestamp": "2024-12-25T13:49:15Z"
+      },
+      {
+        "role": "user",
+        "content": "What database would you use and why?",
+        "timestamp": "2024-12-25T13:58:44Z"
+      },
+      {
+        "role": "assistant",
+        "content": "For a URL shortener, I'd recommend NoSQL like DynamoDB or Cassandra because...",
+        "timestamp": "2024-12-25T14:02:52Z"
+      }
+    ],
+    "sum_convo": "Discussed system design for URL shortener including database selection and scalability considerations",
+    "category": "technical"
+  },
+  {
+    "id": "chat_2024_12_24_163245",
+    "date_time": "2024-12-24T16:32:45Z",
+    "platform": "chatgpt",
+    "duration": 1342,
+    "length": 3156,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "I'm feeling really anxious about leaving my job without another one lined up. Is this a stupid decision?",
+        "timestamp": "2024-12-24T16:32:45Z"
+      },
+      {
+        "role": "assistant",
+        "content": "It's completely normal to feel anxious about this kind of transition. Let's think through your situation...",
+        "timestamp": "2024-12-24T16:34:12Z"
+      },
+      {
+        "role": "user",
+        "content": "I have about 4 months of savings and unemployment benefits. I just feel like I'm wasting time not preparing full-time.",
+        "timestamp": "2024-12-24T16:41:28Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Having 4 months of runway plus unemployment is actually a decent safety net. The key question is whether the extra prep time will meaningfully improve your outcomes...",
+        "timestamp": "2024-12-24T16:44:33Z"
+      }
+    ],
+    "sum_convo": "Discussed anxiety about quitting job to focus on interview prep, evaluated financial safety net and decision-making",
+    "category": "personal"
+  },
+  {
+    "id": "chat_2024_12_23_101823",
+    "date_time": "2024-12-23T10:18:23Z",
+    "platform": "gemini",
+    "duration": 945,
+    "length": 2234,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "What are the health benefits of going on daily walks?",
+        "timestamp": "2024-12-23T10:18:23Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Daily walks offer numerous health benefits: cardiovascular health, improved mood, better sleep...",
+        "timestamp": "2024-12-23T10:19:55Z"
+      },
+      {
+        "role": "user",
+        "content": "How long should I walk to see real benefits?",
+        "timestamp": "2024-12-23T10:26:17Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Research shows that even 15-20 minutes of walking daily can provide significant benefits, though 30 minutes is often recommended...",
+        "timestamp": "2024-12-23T10:33:48Z"
+      }
+    ],
+    "sum_convo": "Researched health benefits of daily walking and optimal duration for meaningful impact",
+    "category": "research"
+  },
+  {
+    "id": "chat_2024_12_22_193412",
+    "date_time": "2024-12-22T19:34:12Z",
+    "platform": "claude",
+    "duration": 567,
+    "length": 1823,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "Help me organize my week. I need to balance job applications, LeetCode practice, and a hackathon project.",
+        "timestamp": "2024-12-22T19:34:12Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Let's create a balanced schedule. What are your energy levels like throughout the day?",
+        "timestamp": "2024-12-22T19:35:28Z"
+      },
+      {
+        "role": "user",
+        "content": "I'm most focused in the morning, get sluggish after lunch, then pick back up around 7pm.",
+        "timestamp": "2024-12-22T19:39:45Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Perfect - let's align tasks with your energy. Morning: LeetCode (requires focus). Afternoon: job apps (less cognitively demanding). Evening: hackathon work (creative energy)...",
+        "timestamp": "2024-12-22T19:43:59Z"
+      }
+    ],
+    "sum_convo": "Created weekly schedule balancing job search, coding practice, and project work around natural energy patterns",
+    "category": "productivity"
+  },
+  {
+    "id": "chat_2024_12_21_085534",
+    "date_time": "2024-12-21T08:55:34Z",
+    "platform": "chatgpt",
+    "duration": 234,
+    "length": 892,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "What's the best way to cook salmon without it drying out?",
+        "timestamp": "2024-12-21T08:55:34Z"
+      },
+      {
+        "role": "assistant",
+        "content": "The key is not to overcook it! Here are some foolproof methods: baking at 275°F for gentle cooking, pan-searing skin-side down...",
+        "timestamp": "2024-12-21T08:56:42Z"
+      },
+      {
+        "role": "user",
+        "content": "How do I know when it's done?",
+        "timestamp": "2024-12-21T08:59:12Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Salmon is done when it reaches 125°F internal temp and flakes easily. It should still be slightly translucent in the center...",
+        "timestamp": "2024-12-21T08:59:48Z"
+      }
+    ],
+    "sum_convo": "Learned techniques for cooking moist salmon and identifying when it's properly done",
+    "category": "other"
+  },
+  {
+    "id": "chat_2024_12_20_ERROR",
+    "date_time": "2024-12-20T14:22:17Z",
+    "platform": "claude",
+    "duration": null,
+    "length": 0,
+    "full_convo": null,
+    "sum_convo": "[EXTRACTION ERROR: Unable to parse conversation structure]",
+    "category": "unknown"
+  },
+  {
+    "id": "chat_2024_12_19_211456",
+    "date_time": "2024-12-19T21:14:56Z",
+    "platform": "gemini",
+    "duration": 823,
+    "length": 2145,
+    "full_convo": [
+      {
+        "role": "user",
+        "content": "Should I feel guilty about not wanting to work in defense tech even though the pay is good?",
+        "timestamp": "2024-12-19T21:14:56Z"
+      },
+      {
+        "role": "assistant",
+        "content": "Not at all. Your values and ethics are just as important as compensation. Many people deliberately avoid certain industries...",
+        "timestamp": "2024-12-19T21:16:33Z"
+      },
+      {
+        "role": "user",
+        "content": "I feel like I'm being privileged or picky when unemployment is hard right now.",
+        "timestamp": "2024-12-19T21:22:45Z"
+      },
+      {
+        "role": "assistant",
+        "content": "It's not privileged to have ethical boundaries. You can acknowledge the job market is tough while also recognizing that doing work misaligned with your values affects your wellbeing...",
+        "timestamp": "2024-12-19T21:28:19Z"
+      }
+    ],
+    "sum_convo": "Discussed ethical concerns about defense industry work and validated personal values in career decisions",
+    "category": "personal"
+  }
+]
