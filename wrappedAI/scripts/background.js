@@ -24,10 +24,12 @@ function routeMessage(message, sender, sendResponse) {
                             convoId: crypto.randomUUID(),
                             platform: platform,
                             tabId: tab.id
+
                         };
                         chrome.tabs.sendMessage(tab.id, { type: "SET_TRACKING", tracking: isTracking, convoJSON: partJSON }).then((response) => {
                             console.log("Got response: ", response);
-                        }).catch(error => { console.error("failed to select tab: ", error) });
+                        }).catch(error => { console.log("failed to select tab: ", error) });
+
 
                     }
                 });
@@ -43,6 +45,9 @@ function routeMessage(message, sender, sendResponse) {
         console.log("saved convo");
         sendResponse({ saved: true });
         // FINAL Push to cloud
+    }
+    if (message.type === "GET_TRACKING") {
+        sendResponse({ tracking: isTracking });
     }
     return true;
 }
