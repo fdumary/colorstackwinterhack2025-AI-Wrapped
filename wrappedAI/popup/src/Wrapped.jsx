@@ -3,8 +3,8 @@ import logo from '/images/logo.png'
 import './Wrapped.css'
 
 function Wrapped() {
-  const [view, setView] = useState('loading')
-  const [data, setData] = useState(null)
+  const [view, setView] = useState('loading');
+  const [data, setData] = useState(null);
   const [isTracking, setTracking] = useState(false);
   const [mes, siteMessage] = useState(null);
 
@@ -254,5 +254,4 @@ function Wrapped() {
 
 
 }
-
 export default Wrapped
