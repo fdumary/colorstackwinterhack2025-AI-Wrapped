@@ -56,11 +56,11 @@ Link to video
 
 ## Screenshots
 
-<img width="478.5" height="237.5" alt="Screenshot 2026-01-10 190754" src="https://github.com/user-attachments/assets/68555cb2-37b4-4325-a9dc-c071768712ce" />
+<img width="638" height="316.67" alt="Screenshot 2026-01-10 190754" src="https://github.com/user-attachments/assets/d809da07-3cc2-4e8f-9711-3d0769d3af9d" />
 
-<img width="478.5" height="237.5" alt="Screenshot 2026-01-10 190803" src="https://github.com/user-attachments/assets/4b0491f9-176e-4b38-9818-8276f5eb143f" />
+<img width="638" height="316.67" alt="Screenshot 2026-01-10 190803" src="https://github.com/user-attachments/assets/760c28cd-915a-4565-908c-719a2a65313a" />
 
-<img width="181" height="280.33" alt="Screenshot 2026-01-08 193922" src="https://github.com/user-attachments/assets/486a9e8e-8892-4430-a2a9-f8f5321ba670" />
+<img width="181" height="280.33" alt="Screenshot 2026-01-11 043446" src="https://github.com/user-attachments/assets/24b4fd49-705b-4423-8232-177bdb5e0dd2" />
 
 <img width="181" height="280.33" alt="Screenshot 2026-01-08 193934" src="https://github.com/user-attachments/assets/766cac0d-2795-4ffa-ab72-78bcb4feccc1" />
 
