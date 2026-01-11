@@ -3,24 +3,14 @@ import logo from '/images/logo.png'
 import './Wrapped.css'
 
 function Wrapped() {
-  const [view, setView] = useState('loading')
+  const [view, setView] = useState('landing')
   const [data, setData] = useState(null)
   const [isTracking, setTracking] = useState(false);
-  const [mes, siteMessage] = useState(null);
 
   function updateTracking() {
     const changeTracking = !isTracking;
-    console.log('Popup: clicked, current state:', changeTracking);
-    chrome.runtime.sendMessage({ type: "SET_TRACKING", tracking: changeTracking }, (response) => {
-      if (response.error) {
-        siteMessage(response.error);
-        setTracking(false);
-      }
-      else {
-        siteMessage(null);
-        setTracking(response.tracking)
-      }
-    });
+    chrome.runtime.sendMessage({ type: "SET_TRACKING", tracking: changeTracking });
+    setTracking(changeTracking);
   }
   useEffect(() => {
     chrome.runtime.sendMessage({ type: "GET_TRACKING" }, (response) => {
@@ -230,20 +220,17 @@ function Wrapped() {
         <img src={logo} alt="logo" />
       </header>
       <div className="wrapped-button">
-        <button className="btn" onClick={() => setView('landing')}>
+          <button className="btn" onClick={() => setView('landing')}>
           AI Wrapped
         </button>
 
       </div>
-      {mes && <div className='site-message'>
-        {mes}
-      </div>}
       <div className="track-button">
-        <button
-          className="btn"
-          onClick={updateTracking}>
-          {isTracking ? "Stop Tracking" : "Start Tracking"}
-        </button>
+      <button 
+        className="btn" 
+        onClick={updateTracking}>
+        {isTracking ? "Stop Tracking" : "Start Tracking"}
+      </button>
 
       </div>
     </div>)
