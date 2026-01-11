@@ -119,7 +119,6 @@ function Wrapped() {
         <img className="logo" src={logo} alt="AI Wrapped logo" />
 
         <div>
-          <div className="title">AI<br />WRAPPED</div>
           <div className="subtitle">Your Week in AI — Summarized</div>
         </div>
 
@@ -228,7 +227,6 @@ function Wrapped() {
   if (view === "tracking") {
     return (<div className="page center landing">
       <header>
-        <h1>AI Wrapped</h1>
         <img src={logo} alt="logo" />
       </header>
       <div className="wrapped-button">
