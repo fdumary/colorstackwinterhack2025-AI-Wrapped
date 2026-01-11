@@ -1,6 +1,9 @@
 <img width="337.33" height="64.67" alt="image" src="https://github.com/user-attachments/assets/4d7fa4cb-0b6d-4790-93a3-d19951cdf1a9" />
 
 ColorStack Winter Break Hackathon Edition 2025
+
+https://colorstackwinterhack2025-ai-wrapped.vercel.app/
+
 ## Description
 AI Wrapped is a Chrome extension that generates a weekly digest of how users interacted with AI over the past week. Each weekly report includes the total number of AI prompts, the top prompt categories, responsible AI signals, and reflections on AI usage.
 
@@ -52,6 +55,11 @@ Link to video
 [Link to presentation](https://docs.google.com/presentation/d/1Snji5ftnWAmG5F9Z-0-HoqGUyvGUrlUMkbF7kkOGMlY/edit?usp=sharing)
 
 ## Screenshots
+
+<img width="478.5" height="237.5" alt="Screenshot 2026-01-10 190754" src="https://github.com/user-attachments/assets/68555cb2-37b4-4325-a9dc-c071768712ce" />
+
+<img width="478.5" height="237.5" alt="Screenshot 2026-01-10 190803" src="https://github.com/user-attachments/assets/4b0491f9-176e-4b38-9818-8276f5eb143f" />
+
 <img width="181" height="280.33" alt="Screenshot 2026-01-08 193922" src="https://github.com/user-attachments/assets/486a9e8e-8892-4430-a2a9-f8f5321ba670" />
 
 <img width="181" height="280.33" alt="Screenshot 2026-01-08 193934" src="https://github.com/user-attachments/assets/766cac0d-2795-4ffa-ab72-78bcb4feccc1" />
