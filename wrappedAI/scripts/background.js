@@ -1,45 +1,4 @@
-let currConvos = [];
-let isTracking = false;
-// handles messages between
-// background <-> popup (buttons : tracking, download/save to cloud)
-// background <-> content (current chat convos : json used to store chat/extraction info)
-function routeMessage(message, sender, sendResponse) {
-    if (message.type === "SET_TRACKING") {
-        // content tracking has been set
-        if (sender.tab) {
-            console.log("content has received isTracking");
-            return;  
-        }
-        else {
-            chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-                const tab = tabs[0];
-                const platform = getPlatform(tab.url);
-                if (platform) {
-                    isTracking = message.tracking;
-                    const partJSON = {convoId: crypto.randomUUID(), platform: platform, tabId: tab.id};
-                    chrome.tabs.sendMessage(tab.id, { type: "SET_TRACKING", tracking: isTracking, convoJSON: partJSON }).then((response) => {
-                    }).catch(error => { console.log("failed to select tab: ", error) });
-                    sendResponse({ tracking: isTracking }); 
-                }
-                else {
-                    sendResponse({ tracking: false, error: "Please open claude or gpt for tracking" });
-                }
 
-            });    
-        }
-    }
-    if (message.type === "NEW_CONVO") {
-        // MVP ONLY
-        currConvos.push(message.data);
-        console.log("saved convo");
-        sendResponse({ saved: true });
-    }
-    if (message.type === "GET_TRACKING") {
-        sendResponse({ tracking: isTracking });
-    }
-    return true;
-}
-// getPlatform() -> determines which ai site 
 function getPlatform(url) {
     if (!url) {
         return null;
@@ -53,5 +12,57 @@ function getPlatform(url) {
         }
     }
     return null;
+}
+function routeMessage(message, sender, sendResponse) {
+    if (message.type === "SET_TRACKING") {
+        if (sender.tab) {
+            console.log("content has received isTracking");
+            return;
+        }
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+            const tab = tabs[0];
+            if (!tab) {
+                sendResponse({ tracking: false, error: "No active tab found" });
+                return;
+            }
+            const platform = getPlatform(tab.url);
+            if (!platform) {
+                sendResponse({ tracking: false, error: "Please open claude or gpt for tracking" });
+                return;
+            }
+            const newTracking = message.tracking;
+            const partJSON = { convoId: crypto.randomUUID(), platform: platform, tabId: tab.id };
+
+
+            chrome.storage.local.set({ isTracking: newTracking }, () => {
+                console.log("Saved current tracking state: ", newTracking);
+                chrome.tabs.sendMessage(tab.id, { type: "SET_TRACKING", tracking: newTracking, convoJSON: partJSON }).then((response) => {
+                    console.log("got content response: ", response);
+                    sendResponse({ tracking: newTracking });
+                }).catch(error => {
+                    console.log("failed to select tab: ", error);
+                    sendResponse({ tracking: newTracking });
+                });
+            });
+        });
+        return true;
+    }
+    if (message.type === "NEW_CONVO") {
+        chrome.storage.local.get({ allConvos: [] }, (response) => {
+            const allConvos = response.allConvos;
+            allConvos.push(message.data);
+            chrome.storage.local.set({ allConvos }, () => {
+                sendResponse({ saved: true, convoLength: allConvos.length });
+            });
+        });
+        return true;
+    }
+    if (message.type === "GET_TRACKING") {
+        chrome.storage.local.get({ isTracking: false }, (response) => {
+            sendResponse({ tracking: response.isTracking });
+        });
+        return true;
+    }
+    return false;
 }
 chrome.runtime.onMessage.addListener(routeMessage);
