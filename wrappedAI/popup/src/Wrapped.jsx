@@ -10,9 +10,7 @@ function Wrapped() {
 
   function updateTracking() {
     const changeTracking = !isTracking;
-    console.log("the tracking button was clicked, current state:", changeTracking);
     chrome.runtime.sendMessage({ type: "SET_TRACKING", tracking: changeTracking }, (response) => {
-      console.log("the tracking page has received the response: ", response);  
       if (response.error) {
         siteMessage(response.error);
         setTracking(false);
@@ -47,12 +45,7 @@ function Wrapped() {
     }
     loadData()
   }, []);
-  // testing saved data 
-  useEffect(() => {
-    chrome.storage.local.get({ allConvos: [] }, (response) => {
-      console.log("All the current convos in wrapped: ", response.allConvos);
-    });
-  }, []);
+
 
 
 

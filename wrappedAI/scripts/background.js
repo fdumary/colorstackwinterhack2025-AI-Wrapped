@@ -16,7 +16,7 @@ function getPlatform(url) {
 function routeMessage(message, sender, sendResponse) {
     if (message.type === "SET_TRACKING") {
         if (sender.tab) {
-            console.log("content has received isTracking");
+
             return;
         }
         chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -35,12 +35,9 @@ function routeMessage(message, sender, sendResponse) {
 
 
             chrome.storage.local.set({ isTracking: newTracking }, () => {
-                console.log("Saved current tracking state: ", newTracking);
                 chrome.tabs.sendMessage(tab.id, { type: "SET_TRACKING", tracking: newTracking, convoJSON: partJSON }).then((response) => {
-                    console.log("got content response: ", response);
                     sendResponse({ tracking: newTracking });
                 }).catch(error => {
-                    console.log("failed to select tab: ", error);
                     sendResponse({ tracking: newTracking });
                 });
             });
