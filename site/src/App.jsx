@@ -8,7 +8,7 @@ export default function App() {
           <img src="/image.png" alt="AI Wrapped logo" className = "logo"/>
         </div>
 
-        <a className="download" href="https://github.com/fdumary/colorstackwinterhack2025-AI-Wrapped" target="_blank" rel="noreferrer">
+        <a className="download" href="https://github.com/fdumary/colorstackwinterhack2025-AI-Wrapped?tab=readme-ov-file#setup--installation-instructions" target="_blank" rel="noreferrer">
           Download Extension
         </a>
       </header>
