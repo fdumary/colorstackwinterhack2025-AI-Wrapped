@@ -11,6 +11,7 @@ let extractInterval = null;
 
 
 function routeMessage(message, sender, sendResponse) {
+  console.log("Content script received message:", message);
   if (message.type === "SET_TRACKING") {
     isTracking = message.tracking;
     partJSON = message.convoJSON;
@@ -106,6 +107,7 @@ function endExtraction() {
     extractInterval = null;
   }
   if (!currConvo) {
+    console.log("No currConvo to save");
     return;
   }
   currConvo.end_time = trackingEnd;
@@ -208,7 +210,7 @@ function extractClaude() {
     msgs.push({ role: "assistant", content: aiText })
   }
   currConvo.chat_msgs = msgs;
-
+  console.log("saved messages, message count: ", msgs.length);
 
 }
 
@@ -227,5 +229,5 @@ function extractGPT() {
     msgs.push({ role: role, content: content });
   }
   currConvo.chat_msgs = msgs;
-
+  console.log("saved messages, message count: ", msgs.length);
 }
