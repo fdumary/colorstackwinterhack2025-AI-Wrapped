@@ -48,14 +48,16 @@ export default function App() {
 
         <ol className="instructionsList">
           <li>
-            Install the <strong>AI Wrapped</strong> Chrome Extension.
+            Click on "Download Extension" to get the <strong>AI Wrapped</strong> Chrome Extension.
           </li>
           <li>
-            Use AI tools like ChatGPT, Claude, or Gemini during the week.
+            Go to Chrome, then "Extensions," enable developer mode, load unpacked "wrappedAI" folder.
           </li>
           <li>
-            Click on <strong>AI Wrapped</strong> in your browser toolbar to
-            view your weekly summary.
+            For testing, switch to "extension" branch and install and build npm: "npm install," "npm run build."
+          </li>
+          <li>
+            Go to ChatGPT or Claude, open <strong>AI Wrapped</strong> in your browser, start tracking and recieve your weekly summary.
           </li>
         </ol>
 
