@@ -48,10 +48,14 @@ Inspired by Spotify Wrapped, our solution provides a weekly summary of AI usage 
 - Rachel Afforo - extension builder, backend implementation
 
 ## Demo Video
-Link to video
+[Link to video](https://youtu.be/MCSQX4KBoj0)
+
+https://github.com/user-attachments/assets/fb02907d-3089-4a00-9210-7b7447cad7b5
 
 ## Presentation
 [Link to presentation](https://docs.google.com/presentation/d/1Snji5ftnWAmG5F9Z-0-HoqGUyvGUrlUMkbF7kkOGMlY/edit?usp=sharing)
+
+[colorstackwinterhack2025-AI-Wrapped.pdf](https://github.com/user-attachments/files/24578921/colorstackwinterhack2025-AI-Wrapped.pdf)
 
 ## Screenshots
 
