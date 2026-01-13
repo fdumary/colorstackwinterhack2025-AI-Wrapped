@@ -36,11 +36,10 @@ Inspired by Spotify Wrapped, our solution provides a weekly summary of AI usage 
 7. Load extension
 
 ### Extension Setup
-#### On the wrappedAI branch
-+ switch to the branch and install and build npm 
++ Switch to "extension" branch and install and build npm 
   + `npm install`
   + `npm run build`
-### Testing the extension on chrome 
+### Test Extension on Chrome 
 + Load the extension from `/wrappedAI`
 ## Team Members & Contributions
 - Francesca Dumary - UI designer, frontend implementation
@@ -58,7 +57,7 @@ Link to video
 
 <img width="638" height="316.67" alt="Screenshot 2026-01-10 190754" src="https://github.com/user-attachments/assets/d809da07-3cc2-4e8f-9711-3d0769d3af9d" />
 
-<img width="638" height="316.67" alt="Screenshot 2026-01-10 190803" src="https://github.com/user-attachments/assets/760c28cd-915a-4565-908c-719a2a65313a" />
+<img width="638" height="316.67" alt="image" src="https://github.com/user-attachments/assets/6e34806f-b732-4795-bf48-f9202fbcfc69" />
 
 <img width="181" height="280.33" alt="Screenshot 2026-01-11 043446" src="https://github.com/user-attachments/assets/24b4fd49-705b-4423-8232-177bdb5e0dd2" />
 
